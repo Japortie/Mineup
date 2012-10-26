@@ -38,11 +38,11 @@ opt.add_option("-v", "--verbose", action="store_true", dest="verbose", default=F
 
 (param, args) = opt.parse_args()
 
-
-if param.initialize:
-	print "Initialize!"
 if param.configure:
 	print "Configure!"
+	
+if param.initialize:
+	print "Initialize!"
 if param.backup:
 	print "Backup!"
 if param.cleanup:
